@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f19aa2;
+            color: #c85151;
+            line-height: 1.6;
+        }
+
+        header {
+            background-image: url(img1.jpg);
+            padding: 50px 20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #efb8cb; 
+        }
+
+        nav {
+            display: flex;
+            background: #db7575;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fdcccc;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            margin-right: 10px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: #bf5555;
+            color: #e7e7e7;
+            border-radius: 4px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content1 {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            width: 70%;
+            background: #f8c0d4;
+            padding: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #b63f3f;
+        }
+
+        .content div {
+        background-image: url('sunset.jpg'); 
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        height: 300px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .content div::before {
+            background-image: url('sunset.jpg');
+            background-size: 100% 300px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* About Me Section */
+        .content1 h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #b63f3f; 
+        }
+
+        .content1 {
+            width: 25%;
+            background: #f8c0d4;
+        }
+
+        .content1 div {
+            background-image: url('me.jpg');
+            background-size: 100% 300px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 720px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content,
+            .content1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            header {
+                font-size: 1.2rem;
+                padding: 20px;
+            }
+
+            nav a {
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Socials</a>
+    </nav>
+    <div class="container">
+        <div class="content1">
+            <h2>About Me</h2>
+            <p>Photo of Me:</p>
+            <div></div>
+        </div>
+        <div class="content">
+            <h2>SUNSET</h2>
+            <p>Check out the beauty of nature as the sun dips below the horizon.</p>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html
